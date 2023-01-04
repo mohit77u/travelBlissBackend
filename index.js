@@ -5,9 +5,12 @@ dotenv.config();
 // import express app
 const express = require('express');
 const cookieParser = require('cookie-parser');
+var cors = require('cors')
 const app = express();
 const path = require('path');
 const bodyParser = require("body-parser");
+ 
+app.use(cors())
 
 // get db from mongoose
 const db = require('./config/mongoose');
