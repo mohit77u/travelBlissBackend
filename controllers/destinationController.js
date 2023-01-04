@@ -1,6 +1,6 @@
-const Destination = require('../models/Destination');
+const Destination = require('../models/destination');
 
-// export a function which is publically available to route's file that should return something
+// get the destinations 
 module.exports.getDestinations = async function(req,res) {
     Destination.find({}, function(err,destination) {
         // if error then return error
