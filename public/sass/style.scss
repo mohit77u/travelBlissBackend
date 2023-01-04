@@ -1,0 +1,125 @@
+@import './variables';
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    // font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    // font-family: 'Roboto';
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.active-option{
+    background: $emrald;
+    color: white;
+    &:hover{
+        background: $emrald !important;
+        color: white !important;
+    }
+}
+
+.error{
+    color: red;
+    font-size: 13px;
+    margin: 5px 0;
+}
+
+.font-cursive{
+    // font-family: 'Marck Script', cursive;
+    font-family: 'Lemon-jelly';
+}
+.font-nunito{
+    font-family: 'Nunito Sans', sans-serif;
+}
+.font-monteserrat{
+    font-family: 'Montserrat', sans-serif;
+}
+.font-roboto{
+    font-family: 'Roboto', sans-serif;
+}
+.font-poppins{
+    font-family: 'Poppins', sans-serif;
+}
+.font-rubik{
+    font-family: 'Rubik', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 6px;
+    background: rgba(19, 0, 36, 0.2);
+    padding: 5px;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+:disabled {
+    cursor: default;
+    opacity: 0.5;
+}
+
+
+.custom-dropdown{
+    &.show{
+        .arrow{
+            transform: rotate(-180deg);
+        }
+    }
+}
+
+.active{
+    background: $emrald;
+    color: white;
+    svg{
+        color: white;
+    }
+}
+
+#admin{
+    .sidebar, .admin-content{
+        transition: 0.4s ease-in-out;
+    }
+}
+.collapse-sidebar{
+    .sidebar{
+        overflow-x: visible;
+        width: 80px;
+        .logo-link{
+            justify-content: center;
+            span{
+                display: none;
+            }
+        }
+        .main-sidebar-menu{
+            h3{
+                display: none;
+            }
+            svg{
+                margin-right: 0;
+            }
+            .title{
+                display: none;
+            }
+            .dropdown-toggle-icon{
+                display: none;
+            }
+            a,button{
+                justify-content: center;
+            }
+        }
+    }
+    .admin-content{
+        margin-left: 80px;
+    }
+}
