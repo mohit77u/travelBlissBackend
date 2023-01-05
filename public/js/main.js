@@ -159,4 +159,9 @@ $(function(){
         }, 4000)
     }
 
+    if($('.select2').length){
+        $('.select2').select2();
+        hideToast();
+    }
+
 })

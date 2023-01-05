@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const destinationController = require('../../controllers/destinationController')
+const destinationApiController = require('../../controllers/api/destinationApiController')
 
-router.get('/destinations', destinationController.getDestinations);
+router.get('/destinations', destinationApiController.getDestinations);
 
 module.exports = router;

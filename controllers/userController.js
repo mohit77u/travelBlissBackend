@@ -55,8 +55,8 @@ module.exports.create = function(req, res){
               return res.redirect('/signin');
             })
            
-        }else{
-             // user already exist so back
+        } else {
+            // user already exist so back
             return res.redirect('back');
         }
     })

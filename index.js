@@ -15,6 +15,9 @@ app.use(cors())
 // get db from mongoose
 const db = require('./config/mongoose');
 
+// cloudinary
+const cloudinary = require('./config/cloudinary');
+
 // used for session cookie
 const session = require('express-session');
 const passport = require('passport');
